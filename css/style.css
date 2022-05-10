@@ -1,3 +1,8 @@
+nav {
+    position: sticky;
+    top: 0;
+}
+
 .sony-logo {
     width: 80px;
     display: inline-block;
@@ -11,6 +16,54 @@
     border-radius: 50px;
 }
 
+.my-button-orange {
+    background-color: orange;
+}
+
 .my-search-icon {
     font-size: 1.2rem;
+}
+
+.jumbotron {
+    background-image: url("../img/jumbo-bg.png");
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.jumbo-main {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.img-container img {
+    width: 100%
+}
+
+.jumbotron .img-container {
+    width: 200px;
+}
+
+.height-full {
+    min-height: 100%;
+}
+
+@media screen and (min-width: 576px) {
+    .jumbo-main {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+    }
+
+} 
+
+@media screen and (min-width: 992px) {
+    .jumbotron {
+        min-height: 700px;
+    }
+
+    .jumbotron .img-container {
+        width: 300px;
+    }
 }
