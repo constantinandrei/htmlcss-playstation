@@ -39,6 +39,13 @@ nav {
     min-height: 500px;
 }
 
+.jumbo-2 {
+    background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+
 .jumbo-main {
     position: absolute;
     bottom: 0;
@@ -51,6 +58,14 @@ nav {
 
 .jumbotron .img-container {
     width: 200px;
+}
+
+.jumbo-2 .img-container {
+    width: 200px;
+}
+
+.jumbotron p {
+    padding-right: 3rem;
 }
 
 .play-card-section .img-container img {
@@ -70,6 +85,23 @@ nav {
         padding-right: 2.5rem;
     }
 
+    .playstation5-section .wrapper .img-container {
+        max-width: 180px;
+        margin-bottom: 1rem;
+    }
+
+    .playstation5-section .wrapper p {
+        max-width: 180px;
+    }
+
+    .jumbotron p {
+        padding-right: 3rem;
+    }
+
+    .jumbo-2 p {
+        padding-right: 3rem;
+    }
+
 } 
 
 @media screen and (min-width: 992px) {
@@ -78,6 +110,14 @@ nav {
     }
 
     .jumbotron .img-container {
+        width: 300px;
+    }
+
+    .jumbo-2 {
+        min-height: 700px;
+    }
+
+    .jumbo-2 .img-container {
         width: 300px;
     }
 }
