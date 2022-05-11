@@ -32,6 +32,12 @@ nav {
 
 .my-button-orange {
     background-color: orange;
+    border-color: orange;
+    color: white;
+}
+
+.my-button-orange:hover {
+    color: white;
 }
 
 .my-search-icon {
@@ -145,6 +151,26 @@ footer .foot-1 .foot-1-logo {
     height: 100%;
 }
 
+.btn::after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    bottom: -6px;
+    left: -6px;
+    border: 2px solid black;
+    border-color: inherit;
+    border-radius: 50rem;
+    opacity: 0;
+}
+
+.btn:hover::after {
+    opacity: 1;
+}
+
+.btn {
+    position: relative;
+}
 
 
 @media screen and (min-width: 576px) {
