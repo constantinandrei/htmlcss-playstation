@@ -82,6 +82,14 @@ nav {
     height: 100%;
 }
 
+.playstation-plus {
+    background-color: #BFBCBB;
+}
+
+.playstation-plus .img-container {
+    width: 300px;
+}
+
 @media screen and (min-width: 576px) {
     .jumbo-main {
         position: absolute;
@@ -114,6 +122,16 @@ nav {
 
 } 
 
+@media screen and (min-width: 768px) {
+
+    .playstation-plus {
+        background-image: url("../img/ps-plus-april-monthly-games-featured-image-block.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 95% 0%;
+    }
+}
+
 @media screen and (min-width: 992px) {
     .jumbotron {
         min-height: 700px;
@@ -129,5 +147,18 @@ nav {
 
     .jumbo-2 .img-container {
         width: 300px;
+    }
+
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .playstation-plus {
+        height: 450px;
+        background-position: 80% 0%;
+    }
+
+    .playstation-plus .wrapper {
+        padding-top: 5rem;
     }
 }
