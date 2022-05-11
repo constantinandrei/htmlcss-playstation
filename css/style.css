@@ -6,11 +6,15 @@ nav {
 }
 
 .my-container-fluid {
-    width: 100%;
     max-width: 1400px;
     margin: auto;
     padding-left: .5rem;
     padding-right: .5rem;
+}
+
+.my-container-small {
+    max-width: 700px;
+    margin: auto;
 }
 
 .sony-logo {
