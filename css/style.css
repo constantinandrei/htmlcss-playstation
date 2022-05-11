@@ -90,6 +90,14 @@ nav {
     width: 300px;
 }
 
+.playstation-now {
+    background-color: #151C3B;
+}
+
+.playstation-now .img-container {
+    width: 300px;
+}
+
 @media screen and (min-width: 576px) {
     .jumbo-main {
         position: absolute;
@@ -130,6 +138,13 @@ nav {
         background-size: contain;
         background-position: 95% 0%;
     }
+
+    .playstation-now {
+        background-image: url("../img/ps-now-april-featured-image-block.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 95% 0%;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -159,6 +174,15 @@ nav {
     }
 
     .playstation-plus .wrapper {
+        padding-top: 5rem;
+    }
+
+    .playstation-now {
+        height: 450px;
+        background-position: 80% 0%;
+    }
+
+    .playstation-now .wrapper {
         padding-top: 5rem;
     }
 }
