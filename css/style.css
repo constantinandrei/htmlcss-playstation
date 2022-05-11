@@ -129,6 +129,24 @@ footer .foot-1 .foot-1-logo {
     margin-right: 1rem;
 }
 
+.absolute-full-end {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 50px;
+    display: none;
+}
+
+.playstation-now .absolute-full-end {
+    right: 20px;
+}
+
+.absolute-full-end img {
+    height: 100%;
+}
+
+
+
 @media screen and (min-width: 576px) {
     .jumbo-main {
         position: absolute;
@@ -162,19 +180,8 @@ footer .foot-1 .foot-1-logo {
 } 
 
 @media screen and (min-width: 768px) {
-
-    .playstation-plus {
-        background-image: url("../img/ps-plus-april-monthly-games-featured-image-block.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 95% 0%;
-    }
-
-    .playstation-now {
-        background-image: url("../img/ps-now-april-featured-image-block.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 95% 0%;
+    .absolute-full-end {
+        display: block;
     }
 }
 
@@ -198,6 +205,11 @@ footer .foot-1 .foot-1-logo {
     .foot-2 {
         padding: 0;
     }
+
+    .playstation-now {
+        height: 550px;
+        background-position: 80% 0%;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -210,10 +222,6 @@ footer .foot-1 .foot-1-logo {
         padding-top: 5rem;
     }
 
-    .playstation-now {
-        height: 450px;
-        background-position: 80% 0%;
-    }
 
     .playstation-now .wrapper {
         padding-top: 5rem;
