@@ -82,6 +82,12 @@ nav {
 
 .play-card-section .img-container img {
     border-radius: 20px;
+    transition-duration: .3s;
+    cursor: pointer;
+}
+
+.play-card-section .img-container img:hover {
+    transform: translateY(-25%);
 }
 
 .new-games .wrapper img {
