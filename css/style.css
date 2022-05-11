@@ -102,6 +102,33 @@ nav {
     width: 300px;
 }
 
+footer {
+    background-color: #04449C;
+}
+
+footer .foot-1 .foot-1-logo {
+    width: 150px;
+}
+
+.foot-1-language .img-container {
+    width: 30px;
+    margin-right: 1rem;
+}
+
+.foot-2 {
+    padding: 3rem 0;
+}
+
+.foot-2 li {
+    padding: 0.5rem 0;
+    list-style-type: none;
+}
+
+.foot-3 .img-container {
+    width: 120px;
+    margin-right: 1rem;
+}
+
 @media screen and (min-width: 576px) {
     .jumbo-main {
         position: absolute;
@@ -168,7 +195,9 @@ nav {
         width: 300px;
     }
 
-    
+    .foot-2 {
+        padding: 0;
+    }
 }
 
 @media screen and (min-width: 1200px) {
