@@ -42,6 +42,10 @@ nav {
     color: #0070d1!important;
 }
 
+.nav-link:focus {
+    color: #0070d1!important;
+}
+
 .my-drop-visible {
     width: 12px;
     display: inline-block;
@@ -159,6 +163,23 @@ nav {
 
 .play-card-section .img-container img:hover {
     transform: translateY(-25%);
+}
+
+.playstation5-section .wrapper {
+    cursor: pointer;
+}
+
+.bottom-border {
+    border-bottom: 2px solid #0070d1;
+}
+
+.bottom-hover-border {
+    border-bottom: 2px solid transparent;
+}
+
+.bottom-hover-border:hover {
+    border-color: #0070d1;
+    opacity: 1!important;
 }
 
 .border-offset {
