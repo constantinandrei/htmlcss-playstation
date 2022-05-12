@@ -12,10 +12,80 @@ nav {
     padding-right: .5rem;
 }
 
+.no-li-symbol li {
+    list-style-type: none;
+}
+
+.blue-square-li-symbol li {
+    list-style: none;
+}
+
+.blue-square-li-symbol li a {
+    color: black;
+    text-decoration: none;
+}
+
+.blue-square-li-symbol li a:hover {
+    color: #0070d1;
+    text-decoration: underline;
+}
+
+.blue-square-li-symbol li::before {
+    content: "\25A0";
+    color: #0070d1;
+    display: inline-block; 
+    width: 1.5rem;
+    margin-left: -1rem;
+}
+
+.nav-link:hover {
+    color: #0070d1!important;
+}
+
+.my-drop-visible {
+    width: 12px;
+    display: inline-block;
+}
+
+.my-drop-non-visible {
+    width: 12px;
+    display: none;
+    transition-duration: .3s;
+}
+
+.dropdown-menu {
+    width: 100vw;
+    border: none;
+    border-radius: 0;
+    margin-top: 0!important;
+}
+
+.nav-link:hover .my-drop-non-visible {
+    display: inline-block;
+}
+
+.nav-link:focus .my-drop-non-visible {
+    transform: rotate(-180deg);
+    display: inline-block;
+}
+
+.nav-link:hover .my-drop-visible {
+    display: none;
+}
+
+.nav-link:focus .my-drop-visible {
+    display: none;
+}
+
+.dropdown-menu {
+    width: 100vw;
+}
+
 .my-container-small {
     max-width: 700px;
     margin: auto;
 }
+
 
 .sony-logo {
     width: 80px;
@@ -41,7 +111,8 @@ nav {
 }
 
 .my-search-icon {
-    font-size: 1.2rem;
+    display: inline-block;
+    width: 25px;
 }
 
 .jumbotron {

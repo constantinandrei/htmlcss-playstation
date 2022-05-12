@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>PlayStation</title>
 </head>
@@ -31,51 +31,325 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" tabindex="-1">
                             Giochi
-                            <span class="my-dropdown">
-                                <i class="fa-solid fa-angle-down"></i>
+                            <span class="my-dropdown my-drop-visible">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down"
+                                    class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="#999"
+                                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                                    </path>
+                                </svg>
+                            </span>
+
+                            <span class="my-dropdown my-drop-non-visible">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down"
+                                    class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="#0070d1"
+                                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                                    </path>
+                                </svg>
                             </span>
                         </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <ul class="d-flex justify-content-center no-li-symbol">
+                                    <li><a class="dropdown-item" href="#">
+                                        <div class="img-container">
+                                            <img src="img/play-menu-ico.png" alt="">
+                                        </div>
+                                    </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                        <div class="img-container">
+                                            <img src="img/play-menu-ico.png" alt="">
+                                        </div>
+                                    </a></li>
+                                </ul>
+                            </li>
+                                
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <ul class="blue-square-li-symbol d-flex justify-content-center g-5">
+                                    <li class="me-5"><a href="#">
+                                        PlayStation 4
+                                    </a></li>
+                                    <li class="me-5"><a href="#">
+                                        PlayStation 4
+                                    </a></li>
+                                    <li class="me-5"><a href="#">
+                                        PlayStation 4
+                                    </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                     
-                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" tabindex="-1">
                             Hardware
-                            <span class="my-dropdown">
-                                <i class="fa-solid fa-angle-down"></i>
+                            <span class="my-dropdown my-drop-visible">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down"
+                                    class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="#999"
+                                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                                    </path>
+                                </svg>
+                            </span>
+
+                            <span class="my-dropdown my-drop-non-visible">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down"
+                                    class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="#0070d1"
+                                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                                    </path>
+                                </svg>
                             </span>
                         </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <ul class="d-flex justify-content-center no-li-symbol">
+                                    <li><a class="dropdown-item" href="#">
+                                        <div class="img-container">
+                                            <img src="img/play-menu-ico.png" alt="">
+                                        </div>
+                                    </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                        <div class="img-container">
+                                            <img src="img/play-menu-ico.png" alt="">
+                                        </div>
+                                    </a></li>
+                                </ul>
+                            </li>
+                                
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <ul class="blue-square-li-symbol d-flex justify-content-center g-5">
+                                    <li class="me-5"><a href="#">
+                                        PlayStation 4
+                                    </a></li>
+                                    <li class="me-5"><a href="#">
+                                        PlayStation 4
+                                    </a></li>
+                                    <li class="me-5"><a href="#">
+                                        PlayStation 4
+                                    </a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Serivizi
-                            <span class="my-dropdown">
-                                <i class="fa-solid fa-angle-down"></i>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" tabindex="-1">
+                            Servizi
+                            <span class="my-dropdown my-drop-visible">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down"
+                                    class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="#999"
+                                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                                    </path>
+                                </svg>
+                            </span>
+
+                            <span class="my-dropdown my-drop-non-visible">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down"
+                                    class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="#0070d1"
+                                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                                    </path>
+                                </svg>
                             </span>
                         </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <ul class="d-flex justify-content-center no-li-symbol">
+                                    <li><a class="dropdown-item" href="#">
+                                        <div class="img-container">
+                                            <img src="img/play-menu-ico.png" alt="">
+                                        </div>
+                                    </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                        <div class="img-container">
+                                            <img src="img/play-menu-ico.png" alt="">
+                                        </div>
+                                    </a></li>
+                                </ul>
+                            </li>
+                                
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <ul class="blue-square-li-symbol d-flex justify-content-center g-5">
+                                    <li class="me-5"><a href="#">
+                                        PlayStation 4
+                                    </a></li>
+                                    <li class="me-5"><a href="#">
+                                        PlayStation 4
+                                    </a></li>
+                                    <li class="me-5"><a href="#">
+                                        PlayStation 4
+                                    </a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" tabindex="-1">
                             Novità
-                            <span class="my-dropdown">
-                                <i class="fa-solid fa-angle-down"></i>
+                            <span class="my-dropdown my-drop-visible">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down"
+                                    class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="#999"
+                                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                                    </path>
+                                </svg>
+                            </span>
+
+                            <span class="my-dropdown my-drop-non-visible">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down"
+                                    class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="#0070d1"
+                                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                                    </path>
+                                </svg>
                             </span>
                         </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <ul class="d-flex justify-content-center no-li-symbol">
+                                    <li><a class="dropdown-item" href="#">
+                                        <div class="img-container">
+                                            <img src="img/play-menu-ico.png" alt="">
+                                        </div>
+                                    </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                        <div class="img-container">
+                                            <img src="img/play-menu-ico.png" alt="">
+                                        </div>
+                                    </a></li>
+                                </ul>
+                            </li>
+                                
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <ul class="blue-square-li-symbol d-flex justify-content-center g-5">
+                                    <li class="me-5"><a href="#">
+                                        PlayStation 4
+                                    </a></li>
+                                    <li class="me-5"><a href="#">
+                                        PlayStation 4
+                                    </a></li>
+                                    <li class="me-5"><a href="#">
+                                        PlayStation 4
+                                    </a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" tabindex="-1">
                             Fai Acquisti
-                            <span class="my-dropdown">
-                                <i class="fa-solid fa-angle-down"></i>
+                            <span class="my-dropdown my-drop-visible">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down"
+                                    class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="#999"
+                                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                                    </path>
+                                </svg>
+                            </span>
+
+                            <span class="my-dropdown my-drop-non-visible">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down"
+                                    class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="#0070d1"
+                                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                                    </path>
+                                </svg>
                             </span>
                         </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <ul class="d-flex justify-content-center no-li-symbol">
+                                    <li><a class="dropdown-item" href="#">
+                                        <div class="img-container">
+                                            <img src="img/play-menu-ico.png" alt="">
+                                        </div>
+                                    </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                        <div class="img-container">
+                                            <img src="img/play-menu-ico.png" alt="">
+                                        </div>
+                                    </a></li>
+                                </ul>
+                            </li>
+                                
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <ul class="blue-square-li-symbol d-flex justify-content-center g-5">
+                                    <li class="me-5"><a href="#">
+                                        PlayStation 4
+                                    </a></li>
+                                    <li class="me-5"><a href="#">
+                                        PlayStation 4
+                                    </a></li>
+                                    <li class="me-5"><a href="#">
+                                        PlayStation 4
+                                    </a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" tabindex="-1">
                             Supporto
-                            <span class="my-dropdown">
-                                <i class="fa-solid fa-angle-down"></i>
+                            <span class="my-dropdown my-drop-visible">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down"
+                                    class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="#999"
+                                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                                    </path>
+                                </svg>
+                            </span>
+
+                            <span class="my-dropdown my-drop-non-visible">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down"
+                                    class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="#0070d1"
+                                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                                    </path>
+                                </svg>
                             </span>
                         </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <ul class="d-flex justify-content-center no-li-symbol">
+                                    <li><a class="dropdown-item" href="#">
+                                        <div class="img-container">
+                                            <img src="img/play-menu-ico.png" alt="">
+                                        </div>
+                                    </a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                        <div class="img-container">
+                                            <img src="img/play-menu-ico.png" alt="">
+                                        </div>
+                                    </a></li>
+                                </ul>
+                            </li>
+                                
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <ul class="blue-square-li-symbol d-flex justify-content-center g-5">
+                                    <li class="me-5"><a href="#">
+                                        PlayStation 4
+                                    </a></li>
+                                    <li class="me-5"><a href="#">
+                                        PlayStation 4
+                                    </a></li>
+                                    <li class="me-5"><a href="#">
+                                        PlayStation 4
+                                    </a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
 
@@ -98,7 +372,11 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <span class="my-search-icon">
-                                <i class="fa-solid fa-search"></i>
+                                <svg width="25px" height="25px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" data-di-rand="1620204969111">
+                                    <g>
+                                        <path d="M8,20.913 C8,14.344 13.344,9 19.913,9 C26.482,9 31.827,14.344 31.827,20.913 C31.827,27.482 26.482,32.827 19.913,32.827 C13.344,32.827 8,27.482 8,20.913 M45.112,43.585 L32.346,30.82 C34.518,28.099 35.827,24.658 35.827,20.913 C35.827,12.139 28.688,5 19.913,5 C11.139,5 4,12.139 4,20.913 C4,29.688 11.139,36.827 19.913,36.827 C23.503,36.827 26.808,35.618 29.474,33.604 L42.284,46.413 C42.674,46.804 43.186,46.999 43.698,46.999 C44.209,46.999 44.721,46.804 45.112,46.413 C45.502,46.023 45.698,45.511 45.698,44.999 C45.698,44.488 45.502,43.976 45.112,43.585"></path>
+                                    </g>
+                                </svg>
                             </span>
                         </a>
                     </li>
